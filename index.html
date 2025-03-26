@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auss</title>
+    <link rel="icon" href="./assets/jewelry_17998109.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gold_merge">
+        <nav id="desktop-nav">
+            <ul class="nav_links">
+                <li class="home-link"><a href="#home">Home</a></li>
+            </ul>
+            <ul class="nav_links">
+                <li><a href="#aupay">Au Pay</a></li>
+                <li><a href="#ausales">Au Sales</a></li>
+                <li><a href="#aushop">Au Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="landing_section">
+            <div class="section_text">
+                <h1 class="typing-container">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h1>
+                <p class="section_text_t2">Take Your Jewellery Store to the Next Level with AURUMM - The Ultimate Software Suite</p>
+                <button class="btn">Schedule Demo</button>
+            </div>
+            <div class="section_pic">
+                <img src="./assets/jewellery_img3.jpg" alt="jewellery_img" class="pic">
+            </div>
+        </section>
+    </div>    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const text = "360° Software Solutions for Your JEWELLERY Store"; // Full text
+        const container = document.getElementById("typing-text");
+
+        let index = 0;
+        function type() {
+            if (index < text.length) {
+                container.textContent = text.substring(0, index + 1); // Append characters naturally
+                index++;
+                setTimeout(type, 100); // Typing speed
+            } else {
+                container.style.borderRight = "none"; // Stop blinking cursor
+            }
+        }
+        
+        type();
+    });
+    </script>
+</body>
+</html>
