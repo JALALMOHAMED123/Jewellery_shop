@@ -36,17 +36,17 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-        const text = "360° Software Solutions for Your JEWELLERY Store"; // Full text
+        const text = "360° Software Solutions for Your JEWELLERY Store"; 
         const container = document.getElementById("typing-text");
 
         let index = 0;
         function type() {
             if (index < text.length) {
-                container.textContent = text.substring(0, index + 1); // Append characters naturally
+                container.textContent = text.substring(0, index + 1); 
                 index++;
-                setTimeout(type, 100); // Typing speed
+                setTimeout(type, 100); 
             } else {
-                container.style.borderRight = "none"; // Stop blinking cursor
+                container.style.borderRight = "none"; 
             }
         }
         
